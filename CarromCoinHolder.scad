@@ -2,7 +2,7 @@ $fn=100;
 difference()
 {
     // Major portion of the solid
-    cylinder(r=16.5*6,h=9);
+    cylinder(r=85,h=9);
 
     r=16.5;
     h=10;
@@ -21,4 +21,4 @@ difference()
     cylinder(r=4*16.5,h=10);
     translate([0,-200,0]) cube([200,400,20]);
 }
-translate([-90,0,8]) cylinder(r=3,h=5);
+translate([-78,0,8]) cylinder(r=3,h=5);
