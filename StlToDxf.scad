@@ -1,0 +1,1 @@
+projection(cut=true) import("/usr/local/google/home/varunmar/projects/carromCoinHolder/CarromCoinHolderWithHoles.stl");
