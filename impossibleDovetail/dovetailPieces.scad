@@ -8,7 +8,7 @@ module cutout(h=300) {
 module cutoutBig(h=300) {
     rotate([90,0,90])
     linear_extrude(height=h) {
-        polygon(points=[[0,0], [50,0], [22,34]]);
+        polygon(points=[[0,0], [50,0], [25,34]]);
     }
 }
 
@@ -23,8 +23,8 @@ module bottompiece() {
 module bottompiece2() {
     difference() {
         cube(100);
-        rotate([0,0,45]) translate([0,15,80]) cutoutBig();
-        rotate([0,0,45]) translate([0,-55,80]) cutoutBig();
+        translate([5,0,0]) rotate([0,0,45]) translate([0,15,80]) cutoutBig();
+        translate([5,0,0]) rotate([0,0,45]) translate([0,-55,80]) cutoutBig();
     }
 }
 
@@ -41,7 +41,7 @@ module topthing() {
 }
 
 
-bottompiece();
-translate([-150,0,0]) bottompiece2();
+bottompiece2();
+//translate([-150,0,0]) bottompiece2();
 
-//translate([-150,0,0]) topthing();
+translate([-150,0,0]) topthing();
